@@ -1,0 +1,60 @@
+body {
+    background-color: #FFB6C1; 
+    cursor: url(./heart.svg) auto;
+}
+
+.board {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #FFB6C1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #FF69B4; 
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    cursor: url(./image.png), pointer;
+    float: left;
+    background-color: #FFE4E1; 
+    color: #FF1493; 
+}
+
+.cellText {
+    animation: 1s 1 linear slidein;
+}
+
+@keyframes slidein {
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cell:hover {
+    background-color: #FFC0CB; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#current-player {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #FF69B4; 
+}
+
+.message {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #FF69B4; 
+}
